@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Viva! BelgianBeer</string>
+    <string name="answer_yes">Yes</string>
+    <string name="answer_no">No</string>
+    <string name="answer_unknown">Not sure</string>
+    <string name="question_0">Question 0</string>
+    <string name="question_1">Question 1</string>
+    <string name="question_2">Question 2</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="back">Back</string>
+    <string name="start">Start !</string>
+    <string name="introduction"></string>
+</resources>

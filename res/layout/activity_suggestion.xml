@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/beerImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/beer_descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/beerImage"
+        android:layout_alignParentLeft="true"
+        android:background="#66ffffff"
+        android:gravity="left"
+        android:text="Description"
+        android:textSize="@dimen/bbb" />
+
+    <TextView
+        android:id="@+id/beername_japaneseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/beerImage"
+        android:layout_below="@+id/beernameText"
+        android:gravity="center"
+        android:text="Large Text"
+        android:background="#ffffffff"
+        android:textSize="@dimen/bbb" />
+
+    <TextView
+        android:id="@+id/beernameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Large Text"
+        android:background="#ffffffff"
+        android:textSize="@dimen/aaa" />
+    
+</RelativeLayout>

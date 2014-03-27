@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ベルギービール万歳!</string>
+    <string name="question_0">珍しいビールを味わってみたいな</string>
+    <string name="suggestion">オススメは?</string>
+    <string name="question_1">ほろ酔い気分になりたい</string>
+    <string name="question_2">今日は爽快な気分だ</string>
+    <string name="answer_yes">はい</string>
+    <string name="answer_no">いいえ</string>
+    <string name="answer_unknown">さぁ</string>
+    <string name="back">戻る</string>
+    <string name="start">スタート!</string>
+    <string name="introduction">今日のあなたにピッタリなベルギービールはこちら!</string>
+</resources>
