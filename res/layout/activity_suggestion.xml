@@ -34,7 +34,7 @@
         android:layout_below="@+id/beernameText"
         android:gravity="center"
         android:text="Large Text"
-        android:background="#ffffffff"
+        android:background="#66ffffff"
         android:textSize="@dimen/bbb" />
 
     <TextView
@@ -45,7 +45,6 @@
         android:layout_alignParentTop="true"
         android:gravity="center"
         android:text="Large Text"
-        android:background="#ffffffff"
-        android:textSize="@dimen/aaa" />
-    
+        android:background="#66ffffff"
+        />
 </RelativeLayout>

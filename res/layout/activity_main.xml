@@ -16,15 +16,20 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="@string/start" />
+        android:minHeight="64dp"
+        android:text="@string/start"
+        android:textSize="@dimen/button_text_size" />
 
     <TextView
-        android:id="@+id/beerNameDescription"
+        android:id="@+id/introductionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"   
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
         android:text="@string/introduction"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/question_text_sze" />
 
 </RelativeLayout>
