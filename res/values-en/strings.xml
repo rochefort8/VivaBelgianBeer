@@ -13,4 +13,5 @@
     <string name="back">Back</string>
     <string name="start">Start !!</string>
     <string name="introduction">Which Belgian beer is best match for you now ? </string>
+    <string name="question_index">Question</string>
 </resources>

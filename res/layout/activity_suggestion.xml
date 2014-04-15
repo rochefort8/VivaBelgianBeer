@@ -12,7 +12,7 @@
         android:id="@+id/beerImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:src="@drawable/ic_launcher" />
 
     <TextView
@@ -24,7 +24,7 @@
         android:background="#66ffffff"
         android:gravity="left"
         android:text="Description"
-        android:textSize="@dimen/bbb" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/beername_japaneseText"
@@ -32,10 +32,10 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/beerImage"
         android:layout_below="@+id/beernameText"
+        android:background="#ffffffff"
         android:gravity="center"
         android:text="Large Text"
-        android:background="#66ffffff"
-        android:textSize="@dimen/bbb" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/beernameText"
@@ -43,8 +43,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:background="#ffffffff"
         android:gravity="center"
         android:text="Large Text"
-        android:background="#66ffffff"
-        />
+        android:textSize="30sp" />
+
 </RelativeLayout>

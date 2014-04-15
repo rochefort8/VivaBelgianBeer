@@ -11,4 +11,5 @@
     <string name="back">戻る</string>
     <string name="start">スタート!</string>
     <string name="introduction">今日のあなたにピッタリなベルギービールはこちら!</string>
+    <string name="question_index">質問</string>
 </resources>

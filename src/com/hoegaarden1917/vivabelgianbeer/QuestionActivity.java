@@ -26,11 +26,12 @@ public class QuestionActivity extends Activity implements OnClickListener {
 	Button yesButton, noButton, notsureButton;
 	int requestCode = 1;	
 	
-	TextView questionText ;
+	TextView questionIndexText, questionText ;
 	int currentQuestionNumber = 1 ;
 	int question_string[] = {
-//			R.string.question_0,R.string.question_1, R.string.question_2
-			R.string.question_0
+		R.string.question_0,R.string.question_1, R.string.question_2
+		// For debugging	
+		// R.string.question_0
 	} ;
 	int maxQuestionNumber = question_string.length ;
 	Answers answers ;
@@ -41,17 +42,17 @@ public class QuestionActivity extends Activity implements OnClickListener {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_questions);
 
+		// Draw 3 buttons (YES/NO/NOT SURE)
 		yesButton = (Button)findViewById(R.id.button_yes) ;
         yesButton.setOnClickListener(this);     
 		noButton = (Button)findViewById(R.id.button_no) ;
         noButton.setOnClickListener(this);     
 		notsureButton = (Button)findViewById(R.id.button_start) ;
         notsureButton.setOnClickListener(this);     
-        questionText = (TextView)findViewById(R.id.beerNameDescription);
-        drawQuestionText() ;       
+
+        drawQuestionText() ;
         
         answers = new Answers(maxQuestionNumber) ;
-        
 	}
 
     @Override
@@ -112,15 +113,21 @@ public class QuestionActivity extends Activity implements OnClickListener {
 	          "Cancel was clicked.", 
 	          Toast.LENGTH_LONG).show();
 	      }
-	    }
-	 }
-	
+	   }
+	}
 	
 	private void drawQuestionText() {
-		
-    	Resources res = getResources();
-    	String str = (String) res.getText(question_string[currentQuestionNumber-1]);
-        questionText.setText(str);
-        
+	    	Resources res = getResources();
+	    	String str ;
+
+	    		// Title (e.g. "Question #1")
+	        str = (String) res.getText(R.string.question_index) + " " + String.valueOf(currentQuestionNumber) ;       
+	        questionIndexText = (TextView)findViewById(R.id.string_questionIndex);		
+	        questionIndexText.setText(str) ;
+
+	        	// Question text
+	    	str = (String) res.getText(question_string[currentQuestionNumber-1]);
+	    	questionText = (TextView)findViewById(R.id.beerNameDescription);		
+	        questionText.setText(str);    		
 	}
 }

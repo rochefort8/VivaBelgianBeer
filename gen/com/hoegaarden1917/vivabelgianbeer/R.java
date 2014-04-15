@@ -32,16 +32,17 @@ public final class R {
         public static final int splash=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f080009;
-        public static final int beerImage=0x7f080005;
+        public static final int action_settings=0x7f08000a;
+        public static final int beerImage=0x7f080006;
         public static final int beerNameDescription=0x7f080004;
-        public static final int beer_descriptionText=0x7f080006;
-        public static final int beernameText=0x7f080008;
-        public static final int beername_japaneseText=0x7f080007;
+        public static final int beer_descriptionText=0x7f080007;
+        public static final int beernameText=0x7f080009;
+        public static final int beername_japaneseText=0x7f080008;
         public static final int button_no=0x7f080002;
         public static final int button_start=0x7f080000;
         public static final int button_yes=0x7f080003;
         public static final int introductionText=0x7f080001;
+        public static final int string_questionIndex=0x7f080005;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -64,6 +65,7 @@ public final class R {
         public static final int question_0=0x7f050004;
         public static final int question_1=0x7f050005;
         public static final int question_2=0x7f050006;
+        public static final int question_index=0x7f05000d;
         public static final int start=0x7f050009;
         public static final int suggestion=0x7f050007;
     }

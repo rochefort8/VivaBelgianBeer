@@ -55,4 +55,15 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="@dimen/question_text_sze" />
 
+    <TextView
+        android:id="@+id/string_questionIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/question_text_sze" />
+
 </RelativeLayout>

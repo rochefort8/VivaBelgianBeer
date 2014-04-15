@@ -105,7 +105,6 @@ public class ShowSuggestionActivity extends Activity implements OnClickListener 
             // TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
             e.printStackTrace();
         }        
-        
 		
 		String fn = "/sdcard/img/" ;
 		fn += Integer.toString(1) ;
