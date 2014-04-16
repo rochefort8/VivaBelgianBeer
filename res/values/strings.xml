@@ -11,4 +11,5 @@
     <string name="back">Back</string>
     <string name="start">Start !</string>
     <string name="introduction"></string>
+    <string name="question_index"/>
 </resources>
