@@ -10,8 +10,11 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends Activity implements OnClickListener {
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
+public class MainActivity extends Activity implements OnClickListener {
+    private AdView mAdView;
 	Button startButton ;
 	int requestCode = 1;	
 	
@@ -25,8 +28,29 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		startButton = (Button)findViewById(R.id.button_start) ;
 		startButton.setOnClickListener(this);     
+		
+        mAdView = (AdView) findViewById(R.id.adView);
+        mAdView.loadAd(new AdRequest.Builder().build());
 	}
 
+    @Override
+    protected void onPause() {
+        mAdView.pause();
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mAdView.resume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        mAdView.destroy();
+        super.onDestroy();
+    }
+	
     @Override
 	public void onClick(View v) {
    	    switch(v.getId()){
