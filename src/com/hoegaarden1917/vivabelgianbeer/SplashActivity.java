@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
- 
+
 public class SplashActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +20,9 @@ public class SplashActivity extends Activity {
                 finish();
             }
         }, 3000);
+
+       BeerDataDownloader beerDataDownloader = new BeerDataDownloader(getBaseContext()) ;
+		beerDataDownloader.Get();
+
     }
 }
