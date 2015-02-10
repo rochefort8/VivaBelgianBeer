@@ -56,8 +56,6 @@ public class BeerDataDownloader {
 									Log.d("Downloader","We've got data. size=" + data.length);
 									beerList.Add(data) ;
 									Log.d("COUNT:", Integer.toString(beerList.getCount()));
-									
-									
 								} else {
 									Log.d("Downloader","There was a problem downloading the data.");
 								}

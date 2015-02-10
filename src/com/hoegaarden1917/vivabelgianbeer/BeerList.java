@@ -23,19 +23,8 @@ public class BeerList {
 	
 	public int Add(byte[] data) 
 	{	
-		FileOutputStream fileOutputStream = null ;
-		int size = getCount();
-		String fileName = Integer.toString(size+1) + ".zip" ;
-		
-        try {
-			fileOutputStream = context.openFileOutput(fileName, Context.MODE_PRIVATE);
-			fileOutputStream.write(data) ;
-			fileOutputStream.close() ;
-        } catch (Exception e) {
-            e.printStackTrace(); 
-        }
-        
-		BeerData d = new BeerData(data) ;
+		String baseName = Integer.toString(getCount() + 1)  ;
+		BeerData d = new BeerData(data, baseName,context ) ;
 		_beerList.add(d) ;
 		return 0 ;
 	}

@@ -21,7 +21,7 @@ public class SplashActivity extends Activity {
             }
         }, 3000);
 
-       BeerDataDownloader beerDataDownloader = new BeerDataDownloader(getBaseContext()) ;
+        BeerDataDownloader beerDataDownloader = new BeerDataDownloader(getBaseContext()) ;
 		beerDataDownloader.Get();
 
     }
